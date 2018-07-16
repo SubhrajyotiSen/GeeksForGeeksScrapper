@@ -36,7 +36,7 @@ def display_menu():
 
 
 def get_category_choice():
-    choice = int(raw_input("Enter choice: "))
+    choice = int(input("Enter choice: "))
     try:
         category_url = CHOICE_TO_CATEGORY_MAPPING[choice]
     except KeyError:
