@@ -70,7 +70,7 @@ def save_articles_as_html_and_pdf():
 
     all_articles += '''</body></html>'''
     html_file_name = 'G4G_' + category_url.title() + '.html'
-    html_file = open(html_file_name, "w")
+    html_file = open(html_file_name, "wb")
     html_file.write(all_articles.encode("utf-8"))
     html_file.close()
 
